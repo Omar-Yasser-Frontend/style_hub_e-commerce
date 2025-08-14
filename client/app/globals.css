@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+* {
+  transition-duration: 300ms;
+}
+
+:root {
+  --text-color: #1c0d0d;
+  --black-color: rgba(0, 0, 0, 0.308);
+  --ui-background: #994d52;
+  --bg-color: #f2e8e8;
+  --color-soft-bg: #fcf8f8;
+  --color-accent: #e82933;
+  --color-border: #e5e8eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-black-txt: var(--text-color);
+  --color-burgundy: var(--ui-background);
+  --color-primary: var(--bg-color);
+  --color-soft-bg: var(--color-soft-bg);
+  --color-accent: var(--color-accent);
+  --color-border-color: var(--color-border);
+  /* --breakpoint-xl: 980px; */
+}
+
+body {
+  /* background: var(--background); */
+  /* color: var(--foreground); */
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-shadow {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  animation: prixClipFix 2s linear infinite;
+  border: 5px solid;
+}
+
+.loader.red-b::before {
+  border-color: var(--color-accent);
+}
+
+.loader.gray-b::before {
+  @apply border-gray-50;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+/* a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s;
+} */
+:is(header, footer ul:first-of-type) a:not(.profile):hover {
+  color: #e82933; /* Accent color, looks good with black text */
+  /* background-color: #fbeaec; Very light accent background for contrast */
+  /* border-radius: 4px; */
+}

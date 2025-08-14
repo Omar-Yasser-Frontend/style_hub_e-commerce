@@ -1,0 +1,7 @@
+/node_modules
+
+/db
+/this.json
+/this.txt
+/dist
+.env
