@@ -3,7 +3,7 @@ const AppError = require("../utils/AppError");
 
 const orderItemSchema = new mongoose.Schema(
   {
-    productId: {
+    id: {
       type: Number,
       required: true,
     },
@@ -15,10 +15,6 @@ const orderItemSchema = new mongoose.Schema(
       type: Number,
       required: true,
       default: 1,
-    },
-    title: {
-      type: String,
-      required: true,
     },
   },
   { _id: false }
