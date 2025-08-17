@@ -14,7 +14,7 @@ function CartOrderInfo() {
   return (
     <div className="flex items-center">
       <p>Total Price: </p>
-      <span className="block ml-auto text-xl font-semibold">{totalPrice}</span>
+      <span className="block ml-auto text-xl font-semibold">${totalPrice.toFixed(2)}</span>
     </div>
   );
 }
