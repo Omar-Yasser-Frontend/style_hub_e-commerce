@@ -24,7 +24,7 @@ function CheckoutForm() {
       //`Elements` instance that was used to create the Payment Element
       elements,
       confirmParams: {
-        return_url: "https://localhost:3000",
+        return_url: window.location.origin,
       },
     });
 
