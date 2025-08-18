@@ -14,7 +14,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Style Hub",
+  title: "Style Store",
   description: "E-commerce platform for fashion and lifestyle products",
 };
 
