@@ -4,7 +4,7 @@
 
 personal project Full-stack e-commerce platform built with MERN stack. Features user authentication, product management, secure payments with Stripe, and a responsive design for seamless shopping experience
 
-[image of the store landing page](./assets/Screenshot.png)
+![image of the store landing page](./assets/Screenshot.png)
 
 ### How to Use the Project
 
