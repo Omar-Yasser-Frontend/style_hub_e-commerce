@@ -112,8 +112,8 @@ npm run dev
 
 ### Live Demo
 
-**Website:** [https://style--store.vercel.app](https://style--store.vercel.app)
-**Repository:** [https://github.com/Omar-Yasser-Frontend/stye-store-e-commerce](https://github.com/Omar-Yasser-Frontend/stye-store-e-commerce)
+- **Website:** [https://style--store.vercel.app](https://style--store.vercel.app)
+- **Repository:** [https://github.com/Omar-Yasser-Frontend/stye-store-e-commerce](https://github.com/Omar-Yasser-Frontend/stye-store-e-commerce)
 
 ### Contact
 
