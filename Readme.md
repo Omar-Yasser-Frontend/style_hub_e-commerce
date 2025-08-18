@@ -39,12 +39,6 @@ this is style store, you can create you account fill your cart and make checkout
 - MongoDB (local installation or MongoDB Atlas)
 - Git
 
-### Clone the Repository
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-```
-
 ### Backend Setup
 
 1. Navigate to the server directory:
